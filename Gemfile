@@ -31,15 +31,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec'
-  gem 'rspec-rails', '~> 4.0.0.beta4'
-  gem 'shoulda-matchers'
-  gem 'factory_bot_rails'
-  gem 'database_cleaner'
-  gem 'simplecov'
-  gem 'faker'
-  gem 'rails-controller-testing'
-  gem 'rubocop'
+  #  A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 end
 
 group :development do
